@@ -10,6 +10,7 @@ import { AdminLoginPageComponent } from './admin-login-page/admin-login-page.com
 import { BookEntryComponent } from './book-entry/book-entry.component';
 import { BookViewComponent } from './book-view/book-view.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DeleteComponent } from './delete/delete.component';
 
 const myRoute : Routes=[
   {
@@ -31,6 +32,10 @@ const myRoute : Routes=[
   {
     path:"view",
     component:BookViewComponent
+  },
+  {
+    path:"delete",
+    component:DeleteComponent
   }
 ]
 @NgModule({
@@ -41,7 +46,8 @@ const myRoute : Routes=[
     AdminLoginPageComponent,
     BookEntryComponent,
     BookViewComponent,
-    NavbarComponent
+    NavbarComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,
