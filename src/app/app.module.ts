@@ -8,6 +8,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { AdminLoginPageComponent } from './admin-login-page/admin-login-page.component';
 import { BookEntryComponent } from './book-entry/book-entry.component';
+import { BookViewComponent } from './book-view/book-view.component';
 
 const myRoute : Routes=[
   {
@@ -25,6 +26,10 @@ const myRoute : Routes=[
   {
     path:"bookentry",
     component:BookEntryComponent
+  },
+  {
+    path:"view",
+    component:BookViewComponent
   }
 ]
 @NgModule({
@@ -33,7 +38,8 @@ const myRoute : Routes=[
     LoginPageComponent,
     SignUpPageComponent,
     AdminLoginPageComponent,
-    BookEntryComponent
+    BookEntryComponent,
+    BookViewComponent
   ],
   imports: [
     BrowserModule,
