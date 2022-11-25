@@ -7,4 +7,37 @@ import { Component } from '@angular/core';
 })
 export class BookViewComponent {
 
+  data:any = [
+    {
+      "BookName" : "Atomic Habits",
+      "Authorname" : "James Clear",
+      "image": "https://www.pngitem.com/pimgs/m/607-6071193_free-book-clipart-transparent-book-images-and-book.png"
+      
+    },
+    {
+      "BookName" : "Atomic Habits",
+      "Authorname" : "James Clear",
+      "image":"https://www.pngitem.com/pimgs/m/607-6071193_free-book-clipart-transparent-book-images-and-book.png"
+      
+    },
+    {
+      "BookName" : "Atomic Habits",
+      "Authorname" : "James Clear",
+      "image":"https://www.pngitem.com/pimgs/m/607-6071193_free-book-clipart-transparent-book-images-and-book.png"
+      
+    },
+    {
+      "BookName" : "Atomic Habits",
+      "Authorname" : "James Clear",
+      "image": "https://www.pngitem.com/pimgs/m/607-6071193_free-book-clipart-transparent-book-images-and-book.png"
+      
+    },
+    {
+      "BookName" : "Atomic Habits",
+      "Authorname" : "James Clear",
+      "image":"https://www.pngitem.com/pimgs/m/607-6071193_free-book-clipart-transparent-book-images-and-book.png"
+      
+    }
+  ]
+
 }

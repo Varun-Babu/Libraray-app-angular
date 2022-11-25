@@ -1,95 +1,20 @@
 <app-navbar></app-navbar>
+<br>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
-                <div class="col col-12 col-sm-4 col-md-4 col-lg-3 col-xxl-3 col-xxl-3">
-
-                  
-                    
+                <div class="col col-12 col-sm-4 col-md-4 col-lg-3 col-xxl-3 col-xxl-3" *ngFor="let i of data">  
                     <div class="card text-white bg-dark mb-3" >
                         <img class="img-top" width="200" height="200"src="https://www.pngitem.com/pimgs/m/607-6071193_free-book-clipart-transparent-book-images-and-book.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Book Name</h5>
-                          <p class="card-text">Author Name</p>
+                          <h5 class="card-title">{{i.BookName}}</h5>
+                          <p class="card-text">{{i.Authorname}}</p>
                           <a href="#" class="btn btn-outline-light">View More</a>
                         </div>
-                      </div>
-                      
+                      </div>    
                 </div>
-                <div class="col col-12 col-sm-4 col-md-4 col-lg-3 col-xxl-3 col-xxl-3">
-                    
-                    <div class="card text-white bg-dark mb-3" >
-                        <img class="img-top" width="200" height="200"src="https://www.pngitem.com/pimgs/m/607-6071193_free-book-clipart-transparent-book-images-and-book.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Book Name</h5>
-                          <p class="card-text">Author Name</p>
-                          <a href="#" class="btn btn-outline-light">View More</a>
-                        </div>
-                      </div>
-                      
-                </div>
-                <div class="col col-12 col-sm-4 col-md-4 col-lg-3 col-xxl-3 col-xxl-3">
-                    
-                    <div class="card text-white bg-dark mb-3" >
-                        <img class="img-top" width="200" height="200"src="https://www.pngitem.com/pimgs/m/607-6071193_free-book-clipart-transparent-book-images-and-book.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Book Name</h5>
-                          <p class="card-text">Author Name</p>
-                          <a href="#" class="btn btn-outline-light">View More</a>
-                        </div>
-                      </div>
-                      
-                </div>
-                <div class="col col-12 col-sm-4 col-md-4 col-lg-3 col-xxl-3 col-xxl-3">
-                    
-                    <div class="card text-white bg-dark mb-3" >
-                        <img class="img-top" width="200" height="200"src="https://www.pngitem.com/pimgs/m/607-6071193_free-book-clipart-transparent-book-images-and-book.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Book Name</h5>
-                          <p class="card-text">Author Name</p>
-                          <a href="#" class="btn btn-outline-light">View More</a>
-                        </div>
-                      </div>
-                      
-                </div>
-                <div class="col col-12 col-sm-4 col-md-4 col-lg-3 col-xxl-3 col-xxl-3">
-                    
-                    <div class="card text-white bg-dark mb-3" >
-                        <img class="img-top" width="200" height="200"src="https://www.pngitem.com/pimgs/m/607-6071193_free-book-clipart-transparent-book-images-and-book.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Book Name</h5>
-                          <p class="card-text">Author Name</p>
-                          <a href="#" class="btn btn-outline-light">View More</a>
-                        </div>
-                      </div>
-                      
-                </div>
-                <div class="col col-12 col-sm-4 col-md-4 col-lg-3 col-xxl-3 col-xxl-3">
-                    
-                    <div class="card text-white bg-dark mb-3" >
-                        <img class="img-top" width="200" height="200"src="https://www.pngitem.com/pimgs/m/607-6071193_free-book-clipart-transparent-book-images-and-book.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Book Name</h5>
-                          <p class="card-text">Author Name</p>
-                          <a href="#" class="btn btn-outline-light">View More</a>
-                        </div>
-                      </div>
-                      
-                </div>
-                <div class="col col-12 col-sm-4 col-md-4 col-lg-3 col-xxl-3 col-xxl-3">
-                    
-                    <div class="card text-white bg-dark mb-3" >
-                        <img class="img-top" width="200" height="200"src="https://www.pngitem.com/pimgs/m/607-6071193_free-book-clipart-transparent-book-images-and-book.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Book Name</h5>
-                          <p class="card-text">Author Name</p>
-                          <a href="#" class="btn btn-outline-light">View More</a>
-                        </div>
-                      </div>
-                      
                 </div>
             </div>
         </div>
     </div>
-</div>
