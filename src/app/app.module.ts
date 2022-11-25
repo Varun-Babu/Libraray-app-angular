@@ -14,6 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchComponent } from './search/search.component';
 import { DeleteComponent } from './delete/delete.component';
 import { EditComponent } from './edit/edit.component';
+import { IssueBooksComponent } from './issue-books/issue-books.component';
 
 const myRoute : Routes=[
   {
@@ -47,6 +48,10 @@ const myRoute : Routes=[
   {
     path:"edit",
     component:EditComponent
+  },
+  {
+    path:"issue",
+    component:IssueBooksComponent
   }
 ]
 @NgModule({
@@ -61,7 +66,8 @@ const myRoute : Routes=[
 
     SearchComponent,
       DeleteComponent,
-      EditComponent
+      EditComponent,
+      IssueBooksComponent
   ],
   imports: [
     BrowserModule,
