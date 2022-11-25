@@ -11,6 +11,7 @@ import { BookEntryComponent } from './book-entry/book-entry.component';
 import { BookViewComponent } from './book-view/book-view.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DeleteComponent } from './delete/delete.component';
+import { SearchComponent } from './search/search.component';
 
 const myRoute : Routes=[
   {
@@ -36,6 +37,10 @@ const myRoute : Routes=[
   {
     path:"delete",
     component:DeleteComponent
+  },
+  {
+    path:"search",
+    component:SearchComponent
   }
 ]
 @NgModule({
@@ -47,7 +52,8 @@ const myRoute : Routes=[
     BookEntryComponent,
     BookViewComponent,
     NavbarComponent,
-    DeleteComponent
+    DeleteComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
