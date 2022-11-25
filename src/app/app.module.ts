@@ -10,7 +10,7 @@ import { AdminLoginPageComponent } from './admin-login-page/admin-login-page.com
 import { BookEntryComponent } from './book-entry/book-entry.component';
 import { BookViewComponent } from './book-view/book-view.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { DeleteComponent } from './delete/delete.component';
+
 import { SearchComponent } from './search/search.component';
 
 const myRoute : Routes=[
@@ -35,10 +35,6 @@ const myRoute : Routes=[
     component:BookViewComponent
   },
   {
-    path:"delete",
-    component:DeleteComponent
-  },
-  {
     path:"search",
     component:SearchComponent
   }
@@ -52,7 +48,7 @@ const myRoute : Routes=[
     BookEntryComponent,
     BookViewComponent,
     NavbarComponent,
-    DeleteComponent,
+
     SearchComponent
   ],
   imports: [
