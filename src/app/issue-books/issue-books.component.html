@@ -14,23 +14,23 @@
                           <h5 class="card-title" style="text-align: center;">ISSUE BOOKS</h5>
                           <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="" class="form-label">Name</label>
-                            <input type="text" class="form-control">
+                            <input name="Name" [(ngModel)]="Name" type="text" class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="" class="form-label">Book Title</label>
-                            <input type="text"  class="form-control">
+                            <input name="Title" [(ngModel)]="Title" type="text"  class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="" class="form-label">Date of Issue</label>
-                            <input type="date"  class="form-control">
+                            <input name="Date" [(ngModel)]="Date" type="date"  class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="" class="form-label">Membership No</label>
-                            <input type="text"  class="form-control">
+                            <input name="MembershipNo" [(ngModel)]="MembershipNo" type="text"  class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
                             <br>
-                            <a href="#" class="btn btn-dark"> Submit</a>
+                            <button (click)="readValue()" href="#" class="btn btn-dark"> Submit</button>
                         </div>
                         </div>
                         </div>
