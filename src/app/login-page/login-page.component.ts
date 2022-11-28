@@ -12,6 +12,14 @@ export class LoginPageComponent {
   readValue = () =>{
     let data:any = {"Username":this.Username,"Password":this.Password}
     console.log(data)
+
+    if (this.Username=="admin" && this.Password=="23" ) {
+      alert("valid")
+      
+    } else {
+      alert("invalid credentials")
+      
+    }
   }
 
 }
