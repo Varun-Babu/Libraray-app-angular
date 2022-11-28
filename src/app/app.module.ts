@@ -15,6 +15,7 @@ import { SearchComponent } from './search/search.component';
 import { DeleteComponent } from './delete/delete.component';
 import { EditComponent } from './edit/edit.component';
 import { IssueBooksComponent } from './issue-books/issue-books.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoute : Routes=[
   {
@@ -72,7 +73,8 @@ const myRoute : Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
