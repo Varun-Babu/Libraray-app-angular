@@ -13,15 +13,15 @@
                           <h5 class="card-title" style="text-align: center;">ADMIN LOGIN</h5>
                           <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="" class="form-label">Username</label>
-                            <input type="text" placeholder="Username" class="form-control">
+                            <input name="Username" [(ngModel)]="Username" type="text" placeholder="Username" class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="" class="form-label">Password</label>
-                            <input type="password" id="" placeholder="Password" class="form-control">
+                            <input name="Password" [(ngModel)]="Password" type="password" id="" placeholder="Password" class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
                             <br>
-                            <a routerLink="/bookentry" class="btn btn-dark">Login</a>
+                            <button (click)="readValue()" class="btn btn-dark">Login</button>
                         </div>
                         <br>
                       <div class="text-center small">Don't have an account? <a href="/signup">Sign up</a></div>
