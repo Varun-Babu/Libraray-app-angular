@@ -7,46 +7,30 @@
                 <h1 style="text-align: center;">Book Entry</h1>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Title</label>
-                    <input name="BookName" [(ngModel)]="BookName" type="text" class="form-control">
+                    <input name="title" [(ngModel)]="title" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Author Name</label>
-                    <input name="Authorname" [(ngModel)]="Authorname" type="text" class="form-control">
+                    <input name="author" [(ngModel)]="author" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                         <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-                        <textarea name="Description" [(ngModel)]="Description" class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                        <textarea name="description" [(ngModel)]="description" class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
                       </div>
-                    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Publisher</label>
-                    <input name="Publisher" [(ngModel)]="Publisher" type="text" class="form-control">
-                </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Language</label>
-                    <input name="Language" [(ngModel)]="Language" type="text" class="form-control">
+                    <label for="" class="form-label">Released Year</label>
+                    <input name="releasedYear" [(ngModel)]="releasedYear" type="date" class="form-control">
                 </div>
-
-                
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Released Date</label>
-                    <input name="ReleasedDate" [(ngModel)]="ReleasedDate" type="date" class="form-control">
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Distributor</label>
-                    <input name="Distributor" [(ngModel)]="Distributor" type="text" class="form-control">
-                </div>
-            
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Price</label>
-                    <input name="Price" [(ngModel)]="Price" type="text" class="form-control">
+                    <input name="Price" [(ngModel)]="price" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                         <label for="exampleFormControlFile1" >Image Upload</label>
-                        <input name="image" [(ngModel)]="image" class="form-control form-control-md" id="formFileSm" type="file" />
+                        <input name="image" [(ngModel)]="image" class="form-control" type="text">
                       
-                    
                 </div>
                 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">

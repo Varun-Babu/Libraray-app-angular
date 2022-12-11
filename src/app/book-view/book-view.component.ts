@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-book-view',
@@ -7,37 +8,12 @@ import { Component } from '@angular/core';
 })
 export class BookViewComponent {
 
-  data:any = [
-    {
-      "BookName" : "Atomic Habits",
-      "Authorname" : "James Clear",
-      "image": "https://www.pngitem.com/pimgs/m/607-6071193_free-book-clipart-transparent-book-images-and-book.png"
-      
-    },
-    {
-      "BookName" : "Atomic Habits",
-      "Authorname" : "James Clear",
-      "image":"https://www.pngitem.com/pimgs/m/607-6071193_free-book-clipart-transparent-book-images-and-book.png"
-      
-    },
-    {
-      "BookName" : "Atomic Habits",
-      "Authorname" : "James Clear",
-      "image":"https://www.pngitem.com/pimgs/m/607-6071193_free-book-clipart-transparent-book-images-and-book.png"
-      
-    },
-    {
-      "BookName" : "Atomic Habits",
-      "Authorname" : "James Clear",
-      "image": "https://www.pngitem.com/pimgs/m/607-6071193_free-book-clipart-transparent-book-images-and-book.png"
-      
-    },
-    {
-      "BookName" : "Atomic Habits",
-      "Authorname" : "James Clear",
-      "image":"https://www.pngitem.com/pimgs/m/607-6071193_free-book-clipart-transparent-book-images-and-book.png"
-      
+data:any=[]
+constructor(private api:ApiService){
+  api.viewBooks().subscribe(
+    (response) => {
+      this.data = response;
     }
-  ]
-
+  )
+}
 }
