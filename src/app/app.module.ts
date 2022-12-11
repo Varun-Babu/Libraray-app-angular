@@ -17,6 +17,7 @@ import { DeleteComponent } from './delete/delete.component';
 import { EditComponent } from './edit/edit.component';
 import { IssueBooksComponent } from './issue-books/issue-books.component';
 import { FormsModule } from '@angular/forms';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const myRoute : Routes=[
   {
@@ -54,6 +55,10 @@ const myRoute : Routes=[
   {
     path:"issue",
     component:IssueBooksComponent
+  },
+  {
+    path:"userView",
+    component:UserProfileComponent
   }
 ]
 @NgModule({
@@ -69,7 +74,8 @@ const myRoute : Routes=[
     SearchComponent,
       DeleteComponent,
       EditComponent,
-      IssueBooksComponent
+      IssueBooksComponent,
+      UserProfileComponent
   ],
   imports: [
     BrowserModule,

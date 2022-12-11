@@ -26,9 +26,13 @@ export class ApiService {
     return this.http.post("http://localhost:8008/delete",dataToSend)
   }
   userLogin = (dataToSend:any)=>{
-    return this.http.post("http://localhost:8080/userLogin",dataToSend)
+    return this.http.post("http://localhost:8008/userlogin",dataToSend)
   }
   userSignUp = (dataToSend:any)=>{
-    return this.http.post("http://localhost:8080/userSignUp",dataToSend)
+    return this.http.post("http://localhost:8008/userSignUp",dataToSend)
   }
+  
+    userView = (DataToSend:any)=>{
+      return this.http.post("http://localhost:8008/userProfile",DataToSend)
+    }
 }
