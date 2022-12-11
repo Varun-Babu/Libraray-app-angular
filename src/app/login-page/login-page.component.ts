@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, resolveForwardRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { ApiService } from '../api.service';
 
@@ -21,6 +21,9 @@ export class LoginPageComponent {
         this.email = ""
         this.password = ""
         if (response.status == "success") {
+          let userId = response.userId
+          console.log(userId);
+          localStorage.setItem("userInfo",userId)
           this.route.navigate(["/view"])
         } else {
           alert(response.message)
